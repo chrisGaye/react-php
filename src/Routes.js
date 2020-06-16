@@ -5,11 +5,13 @@ import Welcome from '././components/Welcome';
 //import Login from '././components/Login/Login';
 //import Signup from '././components/Signup/Signup';
 import NotFound from '././components/NotFound';
+import Signup from './components/SignUp';
 
 const Routes = () => (
     <BrowserRouter >
         <Switch>
             <Route exact path="/" component={Welcome}/>
+            <Route exact path="/signup" component={Signup}/>
             <Route path="*" component={NotFound}/>
         </Switch>
     </BrowserRouter>

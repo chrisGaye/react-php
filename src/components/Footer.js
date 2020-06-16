@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div className="row" id="footer">
                 <div className="medium-12 columns">
-                     <p>Copyright 2019 , <a href="https://fahmidasclassroom.com"> fahmidasclassroom</a></p>
+                     <p>Copyright 2020 , <a href=""> Amadou GAYE</a>, Développeur Web / Mobile from ESP</p>
                 </div>
             </div>
             );
