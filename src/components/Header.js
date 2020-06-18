@@ -7,6 +7,7 @@ class Header extends Component {
             <div className="callout headcolor" id="Header">
                 <div className="row column">
                    <a href="/"><h1 id="tit">{this.props.name}</h1></a>
+                   <p style={{color:'white'}}>Font-end : React JS - Back-end : PHP</p>
                 </div>
             </div>
          );

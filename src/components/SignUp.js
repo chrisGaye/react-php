@@ -14,23 +14,23 @@ class Signup extends Component {
     redirectToReferrer: false
     };
 
-    this.signup = this.signup.bind(this);
-    this.onChange = this.onChange.bind(this);
+        this.signup = this.signup.bind(this);
+        this.onChange = this.onChange.bind(this);
     }
 
     signup() {
 
         if(this.state.username && this.state.password && this.state.email && this.state.name){
 
-        PostData('signup',this.state).then((result) => {
-        let responseJson = result;
-        if(responseJson.userData){
-            sessionStorage.setItem('userData',JSON.stringify(responseJson));
-            this.setState({redirectToReferrer: true});
-        }
-        else
-               alert(result.error);
-        });
+             PostData('signup',this.state).then((result) => {
+            let responseJson = result;
+            if(responseJson.userData){
+                sessionStorage.setItem('userData',JSON.stringify(responseJson));
+                this.setState({redirectToReferrer: true});
+            }
+            else
+                alert(result.error);
+            });
         }
     }
 

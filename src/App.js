@@ -11,7 +11,7 @@ class App extends Component {
   constructor(){
   super();
   this.state={
-  appName: "ReactJS Project",
+  appName: "ReactJS Project Test",
   home: false
   }
   }
